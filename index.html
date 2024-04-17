@@ -5,9 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+      /* tag selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        color: brown;
+      }
+
+      .box h1 {
+        color: blueviolet;
+      }
+
+      .box>h1 {
+        color: red;
+      }
+
+      #header h1 {
+        color: violet;
+      }
+
+      .box+p {
+        color: red;
+      }
+
+      .box~p {
+        color: blue;
+      }
+
+      ol :last-child {
+        color: red;
+      }
+
+      h1:hover {
+        color: purple;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="/index.css" type="text/css"> -->
   </head>
 
   <body>
+
+    <div class="box">
+      <h1>Hello box child</h1>
+      <div class="c-box">
+        <h1>hello c-box child</h1>
+      </div>
+
+
+    </div>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <div id="header">
+      <h1>Hello Im Header</h1>
+
+    </div>
+    <ol>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+    </ol>
 
   </body>
 
