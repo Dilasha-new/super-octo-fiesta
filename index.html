@@ -7,14 +7,29 @@
     <title>Document</title>
 
     <style>
-      /* tag selector */
-      * {
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+      /* * {
         margin: 0;
         padding: 0;
-      }
+      } */
 
+      /* tag selector */
       h1 {
         color: brown;
+      }
+
+      @font-face {
+        font-family: PRegular;
+        src: url('/assets/fonts/Poppins-Regular.ttf');
+      }
+
+      @font-face {
+        font-family: PMedium;
+        src: url('/assets/fonts/Poppins-Medium.ttf');
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
       }
 
       .box h1 {
@@ -44,13 +59,80 @@
       h1:hover {
         color: purple;
       }
+
+      h1::before {
+        content: 'HighLight';
+        color: blue;
+      }
+
+      h1:after {
+        content: 'HighLight';
+        color: red;
+      }
+
+      button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      img[alt='tomb1'] {
+        height: 50px;
+      }
+
+      input[type="email"] {
+        border: 1px solid blueviolet;
+        /* outline: none; */
+      }
+
+      p {
+        text-transform: capitalize;
+        text-indent: 5px;
+        /* text-decoration: line-through 1px red; */
+        /* letter-spacing: ;
+        word-spacing: ; */
+        text-align: justify;
+        font-weight: 900;
+        font-size: 3em;
+        /* font-size: 2rem; */
+        /* overflow: auto; */
+        /* font-weight: 900; */
+      }
+
+      .bx {
+        height: 200px;
+        width: 300px;
+        border: 1px solid grey;
+        font-size: 5px;
+        line-height: 2rem;
+      }
+
+      .bx1>p {
+        font-family: "PMedium", sans-serif;
+
+      }
     </style>
     <!-- <link rel="stylesheet" href="/index.css" type="text/css"> -->
   </head>
 
   <body>
+    <div class="bx">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid sapiente hic repellendus fuga.
+        Consequuntur minima illum vel illo quisquam.</p>
+    </div>
+    <div class="bx1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae excepturi nisi? Voluptatibus nostrum
+        ipsam esse velit quisquam earum magni.</p>
+    </div>
+
+    <input type="text" placeholder="add some">
+    <br>
+    <input type="email" placeholder="your email">
+    <br>
+    <img src="/assets/tomb.jpg" alt="tomb1" height="100px" width="100px">
+    <img src="/assets/tomb.jpg" alt="tomb2" height="100px" width="100px">
 
     <div class="box">
+      <button>Hover This</button>
       <h1>Hello box child</h1>
       <div class="c-box">
         <h1>hello c-box child</h1>
@@ -58,6 +140,7 @@
 
 
     </div>
+
     <p>p1</p>
     <p>p2</p>
     <p>p3</p>
