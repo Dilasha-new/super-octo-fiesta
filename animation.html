@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bx {
+        /* 
+        animation: bxAni 5s linear 1ms infinite normal;
+        border: 1px solid black; */
+        width: 200px;
+        height: 200px;
+        /* background: red;
+        */
+        position: relative;
+        animation: bxAni 5s 2;
+        animation-direction: alternate;
+      }
+
+      @keyframes bxAni {
+        0% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+
+        25% {
+          background: yellow;
+          left: 200px;
+          top: 0px;
+        }
+
+        50% {
+          background: blue;
+          left: 200px;
+          top: 200px;
+        }
+
+        75% {
+          background: green;
+          left: 0px;
+          top: 200px;
+        }
+
+        100% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx"></div>
+  </body>
+
+</html>
