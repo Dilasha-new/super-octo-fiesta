@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bx {
+        max-width: 700px;
+        height: 300px;
+        border: 1px solid #000000;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: end; when muliple */
+      }
+
+      .sidebar {
+        background-color: powderblue;
+        width: 200px;
+        flex-shrink: 2;
+      }
+
+      p {
+        background-color: blueviolet;
+        width: 700px;
+        /* flex-shrink: 3; */
+        flex-basis: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx">
+      <div class="sidebar">
+
+        <h1>This is sidebar</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam deleniti neque eveniet placeat! Voluptas
+        totam, repudiandae dolor praesentium deserunt dolorem consequuntur quod culpa. Quis dolor sapiente natus soluta
+        aut. Quod saepe unde magni delectus odio eius dolorem ducimus placeat quam iusto, deserunt reprehenderit.
+        Voluptatibus animi quos aspernatur repellat facilis facere repudiandae ex! Rem ratione velit ipsa, minima hic
+        odit amet, quidem fugit similique nisi doloribus earum modi asperiores quos placeat doloremque voluptate error
+        nulla consequuntur corrupti totam at itaque ullam possimus! Cupiditate repudiandae cumque, quibusdam sequi
+        dolorum dignissimos iure accusamus pariatur? Deleniti numquam sequi cupiditate rerum quia iure voluptatum!</p>
+
+      <div class="sidebar">
+        <h1>This is sidebar</h1>
+      </div>
+    </div>
+  </body>
+
+</html>

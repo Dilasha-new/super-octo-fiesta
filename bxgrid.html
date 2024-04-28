@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid LayOut</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main-heading {
+        padding: 10px 0;
+        margin-bottom: 10px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header'
+          'main-content main-content main-content sidebar'
+          'main-content main-content main-content sidebar'
+          'articles articles articles sidebar'
+        ;
+        margin: 20px;
+      }
+
+      .articles {
+        grid-area: articles;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        /* grid-template-areas: 'articles article article' 'article article'; */
+      }
+
+      .article {
+        /* grid-area: article; */
+        border: 3px solid black;
+
+      }
+
+      .para {
+        padding: 20px;
+      }
+
+
+
+      .header {
+        padding: 20px;
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color: black;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100px;
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        max-width: 75px;
+        width: 100%;
+
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: black;
+        height: 100%;
+        color: white;
+        padding: 20px 15px;
+        margin-left: 10px;
+      }
+
+      .main-content {
+        grid-area: main-content;
+        margin-bottom: 15px;
+      }
+
+      .articles {
+        grid-area: articles;
+      }
+
+      h3 {
+        background-color: black;
+        color: white;
+        padding: 15px 0 10px 10px;
+        text-align: left;
+
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <h1>Grid Web</h1>
+        <nav>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
+      </div>
+
+
+
+      <div class="main-content">
+        <h2 class="main-heading">Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, ipsum quidem rem deserunt sunt totam?
+          Voluptate
+          officiis soluta tempore veniam asperiores iste molestias, esse inventore harum praesentium minima pariatur,
+          sit
+          molestiae omnis. Pariatur quod recusandae, harum explicabo eligendi repellendus nulla consequatur est, error,
+          deserunt debitis id sed qui dolor. Ea!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatum excepturi suscipit architecto!
+          Quidem voluptatem exercitationem cum saepe hic aut.</p>
+      </div>
+
+
+
+      <div class="articles">
+        <div class="article">
+          <h3>Card One</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rerum asperiores commodi
+            culpa eveniet
+            facilis nesciunt, laudantium eius delectus doloremque quia illo ab ad accusamus?</p>
+        </div>
+        <div class="article">
+          <h3>Card Two</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rerum asperiores commodi
+            culpa eveniet
+            facilis nesciunt, laudantium eius delectus doloremque quia illo ab ad accusamus?</p>
+        </div>
+        <div class="article">
+          <h3>Card Three</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rerum asperiores commodi
+            culpa eveniet
+            facilis nesciunt, laudantium eius delectus doloremque quia illo ab ad accusamus?</p>
+        </div>
+        <div class="article">
+          <h3>Card Four</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rerum asperiores commodi
+            culpa eveniet
+            facilis nesciunt, laudantium eius delectus doloremque quia illo ab ad accusamus?</p>
+        </div>
+        <div class="article">
+          <h3>Card Five</h3>
+          <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rerum asperiores commodi
+            culpa eveniet
+            facilis nesciunt, laudantium eius delectus doloremque quia illo ab ad accusamus?</p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, porro maiores non corporis quibusdam, enim
+          nostrum amet harum assumenda saepe explicabo soluta dolorum incidunt recusandae ea tempora ullam repellat,
+          officiis perferendis est. Dolores ipsum porro, laborum nihil, quod neque harum ullam quae sint, modi adipisci
+          facere. Sed quod quisquam iure?</p>
+      </div>
+
+    </div>
+
+
+
+
+  </body>
+
+</html>
